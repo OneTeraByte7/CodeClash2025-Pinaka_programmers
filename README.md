@@ -5,7 +5,7 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/OneTeraByte7/CodeClash2025-Pinaka_programmers?style=social)](https://github.com/OneTeraByte7/CodeClash2025-Pinaka_programmers/stargazers)  
 
 ## 🏆 **GitHub Trophies**  
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=OneTeraByte7&theme=darkhub&column=7)  
+[![trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
 
 ---
 
