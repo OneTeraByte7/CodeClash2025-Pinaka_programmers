@@ -1,0 +1,66 @@
+import joblib
+import numpy as np
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
+import os
+import cv2
+
+# Define dataset path
+dataset_path = "frames"
+categories = ["safe", "risky"]
+labels = {"safe": 0, "risky": 1}  # Label mapping
+
+# Check if dataset folders exist
+for category in categories:
+    folder = os.path.join(dataset_path, category)
+    if not os.path.exists(folder):
+        raise FileNotFoundError(f"Error: Required folder '{folder}' is missing!")
+
+# Initialize dataset
+X, y = [], []
+
+# Load images with error handling
+for category in categories:
+    folder = os.path.join(dataset_path, category)
+    images = [f for f in os.listdir(folder) if f.lower().endswith((".jpg", ".png", ".jpeg"))]
+
+    if not images:
+        print(f"Warning: No images found in '{folder}', skipping...")
+        continue
+
+    for file in images:
+        file_path = os.path.join(folder, file)
+        
+        try:
+            img = cv2.imread(file_path, cv2.IMREAD_GRAYSCALE)
+            if img is None:
+                print(f"Warning: Failed to load '{file_path}', skipping...")
+                continue
+
+            img = cv2.resize(img, (64, 64))  # Resize image
+            img = img.flatten() / 255.0  # Normalize pixel values
+            X.append(img)
+            y.append(labels[category])
+
+        except Exception as e:
+            print(f"Error loading image '{file_path}': {e}")
+
+# Convert dataset to NumPy arrays
+X, y = np.array(X), np.array(y)
+
+# Check if dataset is empty
+if len(X) == 0:
+    raise ValueError("Error: No valid images found. Ensure 'frames/safe' and 'frames/risky' contain images.")
+
+# Split dataset
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Train Decision Tree Model
+model = DecisionTreeClassifier()
+model.fit(X_train, y_train)
+
+# Save model as .pkl
+model_filename = "car_risk_model.pkl"
+joblib.dump(model, model_filename)
+
+print(f"✅ Model trained and saved successfully as '{model_filename}'")
