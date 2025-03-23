@@ -37,16 +37,19 @@ This AI-powered **Collision Detection System** aims to solve real-world vehicle 
 ```bash
 git clone https://github.com/OneTeraByte7/CodeClash2025-Pinaka_programmers.git
 cd CodeClash2025-Pinaka_programmers
+```
 
 2️⃣ **Create a Virtual Environment**
 ```bash
 python -m venv env
 source env/bin/activate  # On macOS/Linux
 env\Scripts\activate     # On Windows
+```
 
 3️⃣ **Install Dependencies**
 ```bash
 pip install -r requirements.txt
+```
 
 4️⃣ **Run the Model**
 ```bash
