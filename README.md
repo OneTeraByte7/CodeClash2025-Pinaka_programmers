@@ -55,3 +55,18 @@ pip install -r requirements.txt
 4️⃣ **Run the Model**
 ```bash
 python main.py
+```
+## 👀 **Execution**
+
+![image](https://github.com/user-attachments/assets/ddf22a99-7c6c-48f3-b165-b86c789c2e37)
+
+![image](https://github.com/user-attachments/assets/fb1ee91f-1df5-4dc7-8941-9804352bad52)
+
+![image](https://github.com/user-attachments/assets/cf40992a-c242-42dd-8fc9-e491c1498d52)
+
+![image](https://github.com/user-attachments/assets/87aef9b7-a348-43a9-8f01-18d28205ad64)
+
+![image](https://github.com/user-attachments/assets/e50733c7-0ade-4090-8907-da1669197ae2)
+
+
+
