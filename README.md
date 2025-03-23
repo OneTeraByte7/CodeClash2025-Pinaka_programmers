@@ -18,6 +18,7 @@ This AI-powered **Collision Detection System** aims to solve real-world vehicle 
 ✅ **Self-Generated Dataset:** Uses real-world data for high accuracy.  
 ✅ **Post-Ride Analysis:** Generates ride reports and accuracy calculations.  
 ✅ **.pkl Model Training:** Pretrained models improve with continuous learning.  
+✅ **OpenCV(cv2):** Video and Live WebCam Processing.
 
 ---
 
