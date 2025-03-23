@@ -27,7 +27,8 @@ This AI-powered **Collision Detection System** aims to solve real-world vehicle 
 - **Scikit-Learn** (ML Models)  
 - **TensorFlow/Keras** (Deep Learning)  
 - **Pandas & NumPy** (Data Processing)  
-- **Matplotlib & Seaborn** (Data Visualization)  
+- **Matplotlib & Seaborn** (Data Visualization)
+- **cv2** (Video Rendering)
 
 ---
 
