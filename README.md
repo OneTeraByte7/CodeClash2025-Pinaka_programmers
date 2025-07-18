@@ -1,7 +1,7 @@
 # 🚗 **Collision Detection AI - CodeClash2025** 🚀  
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)  
 [![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Sklearn%2C%20TensorFlow-green)](https://scikit-learn.org/)  
-[![License](https://img.shields.io/github/license/OneTeraByte7/CodeClash2025-Pinaka_programmers)](LICENSE)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 [![GitHub Repo stars](https://img.shields.io/github/stars/OneTeraByte7/CodeClash2025-Pinaka_programmers?style=social)](https://github.com/OneTeraByte7/CodeClash2025-Pinaka_programmers/stargazers)  
 
 ## 🏆 **GitHub Trophies**  
